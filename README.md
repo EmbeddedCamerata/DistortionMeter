@@ -1,4 +1,4 @@
-# DistortionMeter
+# Distortion Meter
 
 简介：基于STM32G031的失真度测试仪，包括PWM+LPF正弦波生成，DMA+ADC采样，示波器波形显示，FFT及总谐波失真计算。
 
