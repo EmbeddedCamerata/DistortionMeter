@@ -1,0 +1,33 @@
+SET PATH=D:\Keil_v5\ARM\ARMCC\Bin;E:\VM\bin\;D:\RISC-V Embedded GNU Toolchain\bin;C:\Program Files (x86)\dotnet\;D:\dotnet\;D:\Git\cmd;D:\CTEX\UserData\miktex\bin;D:\CTEX\MiKTeX\miktex\bin;D:\CTEX\CTeX;D:\CTEX\CTeX\Packages\ctex\bin;D:\CTEX\CTeX;D:\CTEX\CTeX\Packages\cct\bin;D:\CTEX\CTeX;D:\CTEX\CTeX\Packages\ty\bin;D:\CTEX\Ghostscript\gs9.18\bin;D:\CTEX\GSview\gsview;D:\CTEX\WinEdt;D:\\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Dell\AppData\Roaming\ActiveState\bin;C:\Users\Dell\AppData\Local\activestate\bin;D:\anaconda3;D:\anaconda3\Library\mingw-w64\bin;D:\anaconda3\Library\usr\bin;D:\anaconda3\Library\bin;D:\anaconda3\Scripts;C:\Users\Dell\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Dell\AppData\Local\Programs\Python\Python38\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;D:\PyCharm Community Edition 2020.2\bin;C:\Users\Dell\AppData\Local\Pandoc\;D:\modeltech64_10.5\win64;D:\JetBrains\PyCharm 2021.1.2\bin;D:\OPENCV\build\x64\vc15\bin;D:\MiKTeX\miktex\bin\x64\;D:\CTEX\MiKTeX\miktex\bin\x64\;D:\modeltech64_2019.2\win64;D:\Microsoft VS Code\bin;C:\Users\Dell\.dotnet\tools;C:\Windows\System32\curl-7.79.1-win64-mingw\bin\I386;C:\Windows\System32\curl-7.79.1-win64-mingw\bin;C:\Windows\System32;D:\Anlogic\TD4.6.3\bin\
+SET CPU_TYPE=STM32G031G8Ux
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=demo
+SET CPU_CLOCK=0x007A1200
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via "demo\startup_stm32g031xx._ia"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\oled.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\main.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\gpio.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\spi.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_it.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_msp.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_spi.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_spi_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_rcc.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_rcc_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_ll_rcc.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_flash.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_flash_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_gpio.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_dma.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_dma_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_ll_dma.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_pwr.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_pwr_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_cortex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_exti.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_tim.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\stm32g0xx_hal_tim_ex.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "demo\system_stm32g0xx.__i"
+"D:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via "demo\demo.lnp"
+"D:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" "demo\demo.axf" --i32combined --output "demo\demo.hex"
